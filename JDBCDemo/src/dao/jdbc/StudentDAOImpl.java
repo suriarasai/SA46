@@ -34,16 +34,9 @@ public class StudentDAOImpl implements StudentDAO {
 		// Step 3
 		Statement statement = conn.createStatement();
 		// Step 4
-		int status = statement.executeUpdate("INSERT INTO sa46.student\r\n" + 
-				"		(name, nric, dob,\r\n" + 
-				"		nick_name,\r\n" + 
-				"		mark)\r\n" + 
-				"		VALUES\r\n" + 
-				"		("+s.getName()+",\r\n" + 
-				"       "+s.getNric()+",\r\n" + 
-				"		null,\r\n" + 
-				"		"+s.getNickName()+",\r\n" + 
-				"		"+s.getMark()+");");
+		int status = statement.executeUpdate("INSERT INTO sa46.student" + 
+				"		VALUES ( \"" + s.getName() + "\", \"" + s.getNric() +
+				"\", null , \"" + s.getNickName() + "\",  " + s.getMark() + ")");
 		statement.close();
 		conn.close();
 		return status;
