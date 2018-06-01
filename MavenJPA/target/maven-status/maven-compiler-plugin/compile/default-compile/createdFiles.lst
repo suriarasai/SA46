@@ -1,0 +1,8 @@
+model\Student.class
+util\PersistenceManager.class
+dao\StudentDAO.class
+dao\jdbc\StudentDAOImpl.class
+dullclass\PleaseSmile.class
+dao\jpa\StudentDAOImpl.class
+dullclass\TestDAOJDBC.class
+dullclass\TestDAOJPA.class

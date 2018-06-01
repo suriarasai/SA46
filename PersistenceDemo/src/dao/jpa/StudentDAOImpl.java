@@ -37,7 +37,9 @@ public class StudentDAOImpl implements StudentDAO {
 	@Override
 	public int createStudent(Student s) throws ClassNotFoundException, SQLException {
 		EntityManager em = PersistenceManager.INSTANCE.getEntityManager();
+		em.getTransaction().begin();
 		em.persist(s);
+		em.getTransaction().commit();
 		em.close();
 		return 0;
 	}
