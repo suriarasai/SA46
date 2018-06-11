@@ -10,7 +10,6 @@
 <dec:head />
 </head>
 <body>
-<jsp:include page="${pageContext.request.contextPath}/decorators/Menu.jsp"/>
 	<table style="width: 100%">
 		<tr>
 			<td>
