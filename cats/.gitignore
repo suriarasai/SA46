@@ -1,2 +1,15 @@
 /.mvn/
 /.settings/
+target
+bin
+build
+.gradle
+.springBeans
+*.iml
+*.ipr
+*.iws
+*.log
+.classpath
+.project
+.settings/
+.DS_Store
